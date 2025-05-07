@@ -1,0 +1,17 @@
+{
+    "properties" : [{
+        "model_part_name" : "Structure.Parts_Solid_Solid",
+        "properties_id"   : 1,
+        "Material"        : {
+            "constitutive_law" : {
+                "name" : "HyperElastic3DLaw"
+            },
+            "Variables"        : {
+                "DENSITY"       : 108.48,
+                "YOUNG_MODULUS" : 2333300000.0,
+                "POISSON_RATIO" : 0.29
+            },
+            "Tables"           : null
+        }
+    }]
+}
