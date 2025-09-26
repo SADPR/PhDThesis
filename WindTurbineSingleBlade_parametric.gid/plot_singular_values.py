@@ -24,11 +24,11 @@ squared_relative_loss = 1.0 - (squared_cumulative_sum / squared_total_sum)
 
 # Plot 1: Linear energy loss
 plt.figure(figsize=(8, 5))
-plt.plot(j_vals, linear_relative_loss, linewidth=2, color="darkorange", label=r"$1 - \sum_{i=1}^{n} \sigma_i \,/\, \sum_{i=1}^{m} \sigma_i$")
+plt.plot(j_vals, linear_relative_loss, linewidth=2, color="darkorange", label=r"$1 - \sum_{i=1}^{n} \sigma_i \,/\, \sum_{i=1}^{r} \sigma_i$")
 plt.yscale("log")
 plt.grid(True, which="both", linestyle="--", linewidth=0.5)
 plt.xlabel(r"Singular value index $n$")
-plt.ylabel(r"$1 - \frac{\sum_{i=1}^{n} \sigma_i}{\sum_{i=1}^{m} \sigma_i}$")
+plt.ylabel(r"$1 - \frac{\sum_{i=1}^{n} \sigma_i}{\sum_{i=1}^{r} \sigma_i}$")
 # plt.legend(loc="upper right")
 plt.tight_layout()
 plt.savefig("svd_relative_loss_linear.pdf", dpi=300, bbox_inches='tight')

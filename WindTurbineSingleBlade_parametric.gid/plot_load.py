@@ -46,15 +46,17 @@ p_test_tip = p_test * (x / L)**2
 # Plot in kPa
 plt.figure(figsize=(8, 4))
 plt.plot(t_vals, p_train_tip / 1e3, label="Training input", color="royalblue", linewidth=2)
-plt.plot(t_vals, p_test_tip / 1e3, label="Test input", color="darkorange", linestyle="--", linewidth=2)
+# plt.plot(t_vals, p_test_tip / 1e3, label="Test input", color="darkorange", linestyle="--", linewidth=2)
 
 plt.xlabel("Time t [s]")
 plt.ylabel("Pressure at tip [kPa]")
-plt.title("Training and Test Pressure Inputs at Blade Tip")
+# plt.title("Training and Test Pressure Inputs at Blade Tip")
+plt.title("Training Pressure Inputs at Blade Tip")
 plt.grid(True)
 plt.legend(loc="upper right")
 plt.tight_layout()
-plt.savefig("training_vs_test_pressure_tip_kpa.pdf", dpi=300, bbox_inches="tight")
+# plt.savefig("training_vs_test_pressure_tip_kpa.pdf", dpi=300, bbox_inches="tight")
+plt.savefig("training_pressure_tip_kpa.png", dpi=300, bbox_inches="tight")
 plt.show()
 
 
